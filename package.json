@@ -1,0 +1,46 @@
+{
+  "name": "rwid-expressjs",
+  "version": "0.0.0",
+  "description": "Learn to build an Node.js backend application using Express.js.",
+  "private": true,
+  "engineStrict": true,
+  "engines": {
+    "node": "^19.6.1",
+    "yarn": "^1.22.19"
+  },
+  "scripts": {
+    "start": "node ./bin/www",
+    "requirements-check": "babel-node node-check-version.cjs --run-yarn-version-check",
+    "postinstall": "yarn requirements-check"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngodingbang/rwid-expressjs.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "Backend",
+    "Node.js",
+    "Express.js"
+  ],
+  "author": "Septianata Rizky Pratama",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ngodingbang/rwid-expressjs/issues"
+  },
+  "homepage": "https://github.com/ngodingbang/rwid-expressjs#readme",
+  "dependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/node": "^7.22.5",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "jade": "~1.11.0",
+    "morgan": "~1.9.1"
+  },
+  "devDependencies": {
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
