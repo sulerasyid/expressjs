@@ -1,6 +1,6 @@
 # RWID Express.js
 
-Learn to build an Node.js backend application using Express.js.
+Learn to build a Node.js backend application using Express.js.
 
 ## Requirement
 
