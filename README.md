@@ -13,7 +13,7 @@ You can install the project by clone it via GitHub :
 
 ```bash
 git clone https://github.com/ngodingbang/rwid-expressjs.git
-yarn
+npm install
 ```
 
 ## Running in Development Environment
@@ -21,7 +21,7 @@ yarn
 You can run this application lively by running this script :
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Changelog
