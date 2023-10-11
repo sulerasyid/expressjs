@@ -1,6 +1,7 @@
 {
   "name": "rwid-expressjs",
   "version": "1.0.0",
+  "type": "module",
   "description": "Learn to build an Node.js backend application using Express.js.",
   "private": true,
   "engineStrict": true,
@@ -13,10 +14,10 @@
     "npm": "9.6.7"
   },
   "scripts": {
-    "start": "node ./bin/www",
-    "dev": "nodemon ./bin/www",
-    "test": "npx jest",
-    "test-coverage": "npx jest --coverage",
+    "start": "node ./bin/www.js",
+    "dev": "nodemon ./bin/www.js",
+    "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
+    "test-coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
     "requirements-check": "npx node-check-version",
     "postinstall": "npm run requirements-check"
   },
@@ -41,6 +42,7 @@
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.3.1",
+    "dotenv-expand": "^10.0.0",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
     "http-status-codes": "^2.2.0",

@@ -1,4 +1,6 @@
-const app = require("../app");
-const request = require("supertest")(app);
+import app from "../app.js";
+import supertest from "supertest";
 
-module.exports = { request };
+const request = supertest(app);
+
+export { request };

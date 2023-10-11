@@ -1,5 +1,5 @@
-const { StatusCodes } = require("http-status-codes");
-const { request } = require("../TestCase");
+import { StatusCodes } from "http-status-codes";
+import { request } from "../TestCase.js";
 
 it("should return 200", async () => {
   const response = await request.get("/");
