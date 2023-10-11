@@ -15,9 +15,10 @@
   "scripts": {
     "start": "node ./bin/www",
     "dev": "nodemon ./bin/www",
-    "test": "jest",
-    "requirements-check": "babel-node node-check-version.cjs --run-yarn-version-check",
-    "postinstall": "yarn requirements-check"
+    "test": "npx jest",
+    "test-coverage": "npx jest --coverage",
+    "requirements-check": "npx node-check-version",
+    "postinstall": "npm run requirements-check"
   },
   "repository": {
     "type": "git",
@@ -36,8 +37,7 @@
   },
   "homepage": "https://github.com/ngodingbang/rwid-expressjs#readme",
   "dependencies": {
-    "@babel/core": "^7.22.5",
-    "@babel/node": "^7.22.5",
+    "@ianriizky/node-check-version": "^1.0.3",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "dotenv": "^16.3.1",
