@@ -34,6 +34,7 @@ app.use(
    * @param {import("express").Response} res
    * @param {import("express").NextFunction} next
    */
+  // eslint-disable-next-line no-unused-vars
   (err, req, res, next) => {
     res.locals.message = err.message;
     res.locals.error = req.app.get("env") === "development" ? err : {};
