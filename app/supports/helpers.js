@@ -7,5 +7,3 @@ import { expand } from "dotenv-expand";
 export function loadEnv(options = undefined) {
   expand(config(options));
 }
-
-loadEnv();

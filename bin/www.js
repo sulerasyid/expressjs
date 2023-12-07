@@ -1,7 +1,9 @@
 import debug from "debug";
 import { createServer } from "http";
 import app from "../app.js";
-import "../env.js";
+import { loadEnv } from "../app/supports/helpers.js";
+
+loadEnv();
 
 /**
  * Normalize a port into a number, string, or false.
