@@ -2,7 +2,14 @@
 
 All notable changes to `RWID Express.js` will be documented in this file.
 
-## [Unreleased](https://github.com/ngodingbang/rwid-expressjs/compare/1.0.0...develop)
+## [Unreleased](https://github.com/ngodingbang/rwid-expressjs/compare/1.0.1...develop)
+
+## [1.0.1](https://github.com/ngodingbang/rwid-expressjs/releases/tag/1.0.1) - 2023-12-09
+
+- fix: remove unnecessary auth routes by [@ngodingbang](https://github.com/ngodingbang) in [#963639a](https://github.com/ngodingbang/rwid-expressjs/commit/963639ab16df41afba1a8479e3a488424fe4f3f9).
+- chore: bump version into 1.0.1 by [@ngodingbang](https://github.com/ngodingbang) in [#35ab0e9](https://github.com/ngodingbang/rwid-expressjs/commit/35ab0e99efe4a7e34dc26c945d81a446cc4c8a8b).
+- fix: change test script on package.json by [@ngodingbang](https://github.com/ngodingbang) in [#7067ee3](https://github.com/ngodingbang/rwid-expressjs/commit/7067ee3d5b77c660b19910dd208a9c00a687a877).
+- fix: change the way to instantiate prisma orm model by [@ngodingbang](https://github.com/ngodingbang) in [#7d381fc](https://github.com/ngodingbang/rwid-expressjs/commit/7d381fc3a3a32d0abd5c210b89fca49a94645e3c).
 
 ## [1.0.0](https://github.com/ngodingbang/rwid-expressjs/releases/tag/1.0.0) - 2023-12-08
 
