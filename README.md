@@ -1,11 +1,10 @@
 # RWID Express.js
 
-Learn to build an Node.js backend application using Express.js.
+Learn to build a Node.js backend application using Express.js.
 
 ## Requirement
 
-- Node.js ^19.6.1
-- Yarn ^1.22.19
+- Node.js ^18.17.1
 
 ## Instalation
 
@@ -13,7 +12,7 @@ You can install the project by clone it via GitHub :
 
 ```bash
 git clone https://github.com/ngodingbang/rwid-expressjs.git
-yarn
+npm install
 ```
 
 ## Running in Development Environment
@@ -21,7 +20,7 @@ yarn
 You can run this application lively by running this script :
 
 ```bash
-yarn dev
+npm run dev
 ```
 
 ## Changelog
