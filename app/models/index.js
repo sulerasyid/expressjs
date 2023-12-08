@@ -1,4 +1,4 @@
-import prisma, { Prisma, PrismaClient } from "@prisma/client";
+import { PrismaClient } from "@prisma/client";
 import chalk from "chalk";
 
 function createModel() {
@@ -16,6 +16,5 @@ function createModel() {
   return model;
 }
 
-const model = createModel();
-
-export { model, prisma, Prisma, PrismaClient };
+export const model = createModel();
+export * from "@prisma/client";
