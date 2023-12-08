@@ -1,4 +1,3 @@
-import auth from "./auth.js";
 import home from "./home.js";
 import users from "./users.js";
 import express from "express";
@@ -6,7 +5,6 @@ import express from "express";
 const router = express.Router();
 
 router.use("/", home);
-router.use("/", auth);
 router.use("/users", users);
 
 export default router;
