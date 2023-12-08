@@ -6,12 +6,10 @@
   "private": true,
   "engineStrict": true,
   "engines": {
-    "node": "^18.17.1",
-    "npm": "^9.6.7"
+    "node": "^18.17.0"
   },
   "volta": {
-    "node": "18.17.1",
-    "npm": "9.6.7"
+    "node": "18.17.0"
   },
   "scripts": {
     "start": "node ./bin/www.js",
@@ -28,7 +26,7 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules npx jest",
     "test-coverage": "NODE_OPTIONS=--experimental-vm-modules npx jest --coverage",
     "p2o": "npx p2o postman_collection.json -f openapi.yml",
-    "redoc:build": "npx @redocly/cli build-docs openapi.yml --output=resources/views/api-doc.html",
+    "redoc:build": "npx @redocly/cli build-docs openapi.yml --output=public/api-doc.html",
     "api-doc": "npm run p2o && npm run redoc:build",
     "requirements-check": "npx node-check-version",
     "postinstall": "npm run requirements-check"

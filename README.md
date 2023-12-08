@@ -5,7 +5,6 @@ Learn to build a Node.js backend application using Express.js.
 ## Requirement
 
 - Node.js ^18.17.1
-- npm ^9.6.7
 
 ## Instalation
 
