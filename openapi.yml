@@ -1,0 +1,147 @@
+openapi: 3.0.0
+info:
+  title: rwid-express
+  description: |-
+    # RWID Express.js
+
+    Learn to build a Node.js backend application using Express.js.
+
+    ## GitHub Repository
+
+    https://github.com/ngodingbang/rwid-expressjs
+  version: 1.0.1
+servers:
+  - url: http://{{base_url}}
+tags:
+  - name: home
+  - name: users
+paths:
+  /:
+    get:
+      tags:
+        - home
+      summary: index
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '21'
+            ETag:
+              schema:
+                type: string
+                example: W/"15-fWwxo68NlPRHzd7O4auWM6L7XY4"
+            Date:
+              schema:
+                type: string
+                example: Fri, 08 Dec 2023 13:30:39 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                message: Express
+  /app-version:
+    get:
+      tags:
+        - home
+      summary: app-version
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '23'
+            ETag:
+              schema:
+                type: string
+                example: W/"17-WWXvNKqPyQGB5X4RmQNakZiuPPc"
+            Date:
+              schema:
+                type: string
+                example: Fri, 08 Dec 2023 13:30:12 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                app-version: 1.0.0
+  /users:
+    get:
+      tags:
+        - users
+      summary: index
+      responses:
+        '200':
+          description: OK
+          headers:
+            X-Powered-By:
+              schema:
+                type: string
+                example: Express
+            Content-Type:
+              schema:
+                type: string
+                example: application/json; charset=utf-8
+            Content-Length:
+              schema:
+                type: integer
+                example: '11'
+            ETag:
+              schema:
+                type: string
+                example: W/"b-EFAlOux7Kcr/ZEgGkn2r+oFAbu4"
+            Date:
+              schema:
+                type: string
+                example: Fri, 08 Dec 2023 13:32:10 GMT
+            Connection:
+              schema:
+                type: string
+                example: keep-alive
+            Keep-Alive:
+              schema:
+                type: string
+                example: timeout=5
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                data: []
