@@ -40,3 +40,10 @@ The MIT License (MIT). Please see [License File](LICENSE.md) for more informatio
 | Role   | Name                                                     |
 | ------ | -------------------------------------------------------- |
 | Author | [Septianata Rizky Pratama](https://github.com/ianriizky) |
+
+Migrate
+
+ npx prisma db seed
+
+Run
+http://localhost:3000/user?page[number]=1&page[size]=2

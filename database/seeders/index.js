@@ -1,22 +1,29 @@
 import { model, prisma } from "../../app/models/index.js";
 import { Hash } from "../../app/supports/Hash.js";
+import { faker } from '@faker-js/faker';
+
 
 try {
-  await model.user.upsert({
-    where: { username: "ianrizky" },
-    update: {},
-    create: {
-      username: "ianrizky",
-      email: "ian.rizkypratama@gmail.com",
-      name: "Septianata Rizky Pratama",
-      auths: {
-        create: {
-          provider: prisma.AuthProvider.local,
-          password: await Hash.make("12345"),
+  const total = await model.user.count()
+  if (total === 0) {
+    for (let index = 0; index < 50; index++) {
+      await model.user.create({
+        data: {
+          name: faker.person.fullName(),
+          email: faker.internet.email(),
+          username: faker.internet.userName(),
+          auths: {
+            create: {
+              provider: prisma.AuthProvider.local,
+              password: await Hash.make("12345"),
+            },
+          },
         },
-      },
-    },
-  });
+      });
+    }
+  } else {
+    console.log("already seeder")
+  }
 } catch (error) {
   console.error(error);
 
